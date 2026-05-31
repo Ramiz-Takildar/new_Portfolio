@@ -363,7 +363,9 @@ html.light-mode .nav-toggle span {
 }
 
 .hero-badge {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
     padding: 0.8rem 1.5rem;
     background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(240, 147, 251, 0.2));
     border: 1px solid rgba(102, 126, 234, 0.4);
@@ -373,6 +375,11 @@ html.light-mode .nav-toggle span {
     font-size: 0.9rem;
     margin-bottom: 2rem;
     backdrop-filter: blur(10px);
+}
+
+.hero-badge i {
+    color: #fbbf24;
+    font-size: 1rem;
 }
 
 html.light-mode .hero-badge {
@@ -499,6 +506,19 @@ html.light-mode .btn-secondary:hover {
     background: var(--primary);
     color: white;
 }
+
+.btn-tertiary {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    border: none;
+}
+
+.btn-tertiary:hover {
+    background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(245, 87, 108, 0.3);
+}
+
 
 .hero-stats {
     display: flex;
