@@ -382,3 +382,72 @@ if (stickyCtaToggle && stickyCtaMenu) {
 }
 
 console.log('Portfolio loaded successfully with sticky CTAs');
+
+// GitHub Contribution Graph Generator
+function generateContributionGraph() {
+    const graph = document.getElementById('contributionGraph');
+    if (!graph) return;
+    
+    const weeks = 53;
+    const daysPerWeek = 7;
+    
+    for (let week = 0; week < weeks; week++) {
+        for (let day = 0; day < daysPerWeek; day++) {
+            const cell = document.createElement('div');
+            cell.className = 'contribution-day';
+            
+            // Random contribution level (0-4)
+            const level = Math.floor(Math.random() * 5);
+            if (level > 0) {
+                cell.classList.add(`level-${level}`);
+            }
+            
+            // Add tooltip
+            const contributions = level * Math.floor(Math.random() * 10 + 1);
+            cell.title = `${contributions} contributions`;
+            
+            graph.appendChild(cell);
+        }
+    }
+}
+
+// Animate GitHub Stats Counter
+function animateStats() {
+    const statNumbers = document.querySelectorAll('.stat-number');
+    
+    statNumbers.forEach(stat => {
+        const target = parseInt(stat.getAttribute('data-target'));
+        const duration = 2000; // 2 seconds
+        const increment = target / (duration / 16); // 60fps
+        let current = 0;
+        
+        const updateCounter = () => {
+            current += increment;
+            if (current < target) {
+                stat.textContent = Math.floor(current);
+                requestAnimationFrame(updateCounter);
+            } else {
+                stat.textContent = target;
+            }
+        };
+        
+        // Start animation when element is in viewport
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    updateCounter();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(stat);
+    });
+}
+
+// Initialize GitHub Dashboard
+document.addEventListener('DOMContentLoaded', () => {
+    generateContributionGraph();
+    animateStats();
+});
+

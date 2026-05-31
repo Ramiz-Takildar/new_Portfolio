@@ -1376,6 +1376,244 @@
                         <h4>50+</h4>
                         <p>Projects Delivered</p>
                     </div>
+
+
+    <!-- GitHub Activity Dashboard -->
+    <section id="github-activity" class="github-dashboard">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>GitHub Activity</h2>
+                <p>Open source contributions and code statistics</p>
+            </div>
+
+            <!-- GitHub Stats Overview -->
+            <div class="github-stats-grid">
+                <div class="github-stat-card glass-effect">
+                    <div class="stat-icon-wrapper">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="stat-details">
+                        <h3 class="stat-number" data-target="150">0</h3>
+                        <p class="stat-label">Public Repositories</p>
+                    </div>
+                </div>
+
+                <div class="github-stat-card glass-effect">
+                    <div class="stat-icon-wrapper">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="stat-details">
+                        <h3 class="stat-number" data-target="2500">0</h3>
+                        <p class="stat-label">Total Commits</p>
+                    </div>
+                </div>
+
+                <div class="github-stat-card glass-effect">
+                    <div class="stat-icon-wrapper">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-details">
+                        <h3 class="stat-number" data-target="450">0</h3>
+                        <p class="stat-label">Stars Earned</p>
+                    </div>
+                </div>
+
+                <div class="github-stat-card glass-effect">
+                    <div class="stat-icon-wrapper">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-details">
+                        <h3 class="stat-number" data-target="85">0</h3>
+                        <p class="stat-label">Followers</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contribution Graph -->
+            <div class="contribution-section">
+                <div class="contribution-header">
+                    <h3>
+                        <i class="fas fa-chart-bar"></i>
+                        Contribution Activity
+                    </h3>
+                    <p>1,200+ contributions in the last year</p>
+                </div>
+                <div class="contribution-graph glass-effect">
+                    <div class="graph-legend">
+                        <span>Less</span>
+                        <div class="legend-colors">
+                            <span class="legend-box level-0"></span>
+                            <span class="legend-box level-1"></span>
+                            <span class="legend-box level-2"></span>
+                            <span class="legend-box level-3"></span>
+                            <span class="legend-box level-4"></span>
+                        </div>
+                        <span>More</span>
+                    </div>
+                    <div class="graph-grid" id="contributionGraph">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Repositories -->
+            <div class="top-repos-section">
+                <h3>
+                    <i class="fas fa-fire"></i>
+                    Featured Repositories
+                </h3>
+                <div class="repos-grid">
+                    <a href="https://github.com/Ramiz-Takildar/terraform-aws-infra" target="_blank" class="repo-card glass-effect">
+                        <div class="repo-header">
+                            <div class="repo-icon">
+                                <i class="fas fa-folder"></i>
+                            </div>
+                            <h4>terraform-aws-infra</h4>
+                        </div>
+                        <p class="repo-description">Complete AWS infrastructure as code with Terraform - VPC, EKS, RDS, and more</p>
+                        <div class="repo-stats">
+                            <span><i class="fas fa-star"></i> 45</span>
+                            <span><i class="fas fa-code-branch"></i> 12</span>
+                            <span class="repo-language">
+                                <span class="language-dot terraform"></span>
+                                HCL
+                            </span>
+                        </div>
+                        <div class="repo-topics">
+                            <span>terraform</span>
+                            <span>aws</span>
+                            <span>infrastructure</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/Ramiz-Takildar/gitops-argocd" target="_blank" class="repo-card glass-effect">
+                        <div class="repo-header">
+                            <div class="repo-icon">
+                                <i class="fas fa-folder"></i>
+                            </div>
+                            <h4>gitops-argocd</h4>
+                        </div>
+                        <p class="repo-description">GitOps deployment pipeline with ArgoCD and Helm for multi-environment Kubernetes</p>
+                        <div class="repo-stats">
+                            <span><i class="fas fa-star"></i> 38</span>
+                            <span><i class="fas fa-code-branch"></i> 8</span>
+                            <span class="repo-language">
+                                <span class="language-dot yaml"></span>
+                                YAML
+                            </span>
+                        </div>
+                        <div class="repo-topics">
+                            <span>gitops</span>
+                            <span>argocd</span>
+                            <span>kubernetes</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/Ramiz-Takildar/devsecops-pipeline" target="_blank" class="repo-card glass-effect">
+                        <div class="repo-header">
+                            <div class="repo-icon">
+                                <i class="fas fa-folder"></i>
+                            </div>
+                            <h4>devsecops-pipeline</h4>
+                        </div>
+                        <p class="repo-description">Production-grade CI/CD with comprehensive security scanning and automated gates</p>
+                        <div class="repo-stats">
+                            <span><i class="fas fa-star"></i> 52</span>
+                            <span><i class="fas fa-code-branch"></i> 15</span>
+                            <span class="repo-language">
+                                <span class="language-dot docker"></span>
+                                Dockerfile
+                            </span>
+                        </div>
+                        <div class="repo-topics">
+                            <span>devsecops</span>
+                            <span>security</span>
+                            <span>cicd</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/Ramiz-Takildar/monitoring-stack" target="_blank" class="repo-card glass-effect">
+                        <div class="repo-header">
+                            <div class="repo-icon">
+                                <i class="fas fa-folder"></i>
+                            </div>
+                            <h4>monitoring-stack</h4>
+                        </div>
+                        <p class="repo-description">Enterprise observability with Prometheus, Grafana, and Alertmanager</p>
+                        <div class="repo-stats">
+                            <span><i class="fas fa-star"></i> 41</span>
+                            <span><i class="fas fa-code-branch"></i> 10</span>
+                            <span class="repo-language">
+                                <span class="language-dot yaml"></span>
+                                YAML
+                            </span>
+                        </div>
+                        <div class="repo-topics">
+                            <span>monitoring</span>
+                            <span>prometheus</span>
+                            <span>grafana</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/Ramiz-Takildar/multi-cloud-k8s" target="_blank" class="repo-card glass-effect">
+                        <div class="repo-header">
+                            <div class="repo-icon">
+                                <i class="fas fa-folder"></i>
+                            </div>
+                            <h4>multi-cloud-k8s</h4>
+                        </div>
+                        <p class="repo-description">Multi-cloud Kubernetes platform with automated failover and disaster recovery</p>
+                        <div class="repo-stats">
+                            <span><i class="fas fa-star"></i> 67</span>
+                            <span><i class="fas fa-code-branch"></i> 18</span>
+                            <span class="repo-language">
+                                <span class="language-dot go"></span>
+                                Go
+                            </span>
+                        </div>
+                        <div class="repo-topics">
+                            <span>kubernetes</span>
+                            <span>multi-cloud</span>
+                            <span>aws</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/Ramiz-Takildar/cicd-pipeline" target="_blank" class="repo-card glass-effect">
+                        <div class="repo-header">
+                            <div class="repo-icon">
+                                <i class="fas fa-folder"></i>
+                            </div>
+                            <h4>cicd-pipeline</h4>
+                        </div>
+                        <p class="repo-description">End-to-end CI/CD with Jenkins and ArgoCD for automated deployments</p>
+                        <div class="repo-stats">
+                            <span><i class="fas fa-star"></i> 35</span>
+                            <span><i class="fas fa-code-branch"></i> 9</span>
+                            <span class="repo-language">
+                                <span class="language-dot groovy"></span>
+                                Groovy
+                            </span>
+                        </div>
+                        <div class="repo-topics">
+                            <span>jenkins</span>
+                            <span>cicd</span>
+                            <span>automation</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- GitHub Profile Link -->
+            <div class="github-cta">
+                <a href="https://github.com/Ramiz-Takildar" target="_blank" class="btn-primary">
+                    <i class="fab fa-github"></i>
+                    View Full GitHub Profile
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
                 </div>
                 <div class="stat-item">
                     <div class="stat-icon">
