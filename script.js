@@ -66,6 +66,119 @@ for (let i = 0; i < particleCount; i++) {
 let animationId;
 let isTabActive = true;
 
+
+
+// Performance Optimization - Lazy Loading Images
+function lazyLoadImages() {
+    const images = document.querySelectorAll('img[data-src]');
+    
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+                img.removeAttribute('data-src');
+                observer.unobserve(img);
+            }
+        });
+    }, {
+        rootMargin: '50px'
+    });
+    
+    images.forEach(img => imageObserver.observe(img));
+}
+
+// Smooth Scroll Animation Observer
+function initScrollAnimations() {
+    const elements = document.querySelectorAll('.project-card, .cert-card, .timeline-card, .repo-card, .github-stat-card');
+    
+    const scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in-up', 'visible');
+                scrollObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+    
+    elements.forEach(el => {
+        el.classList.add('fade-in-up');
+        scrollObserver.observe(el);
+    });
+}
+
+// Performance Monitoring
+function logPerformanceMetrics() {
+    if ('performance' in window) {
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const perfData = performance.getEntriesByType('navigation')[0];
+                if (perfData) {
+                    console.log('Performance Metrics:');
+                    console.log(`DOM Content Loaded: ${perfData.domContentLoadedEventEnd - perfData.domContentLoadedEventStart}ms`);
+                    console.log(`Page Load Time: ${perfData.loadEventEnd - perfData.loadEventStart}ms`);
+                    console.log(`Total Load Time: ${perfData.loadEventEnd - perfData.fetchStart}ms`);
+                }
+                
+                // Log Largest Contentful Paint
+                if ('PerformanceObserver' in window) {
+                    const lcpObserver = new PerformanceObserver((list) => {
+                        const entries = list.getEntries();
+                        const lastEntry = entries[entries.length - 1];
+                        console.log(`LCP: ${lastEntry.renderTime || lastEntry.loadTime}ms`);
+                    });
+                    lcpObserver.observe({ entryTypes: ['largest-contentful-paint'] });
+                }
+            }, 0);
+        });
+    }
+}
+
+// Debounce function for performance
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// Optimize scroll events
+let ticking = false;
+function optimizedScroll(callback) {
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            callback();
+            ticking = false;
+        });
+        ticking = true;
+    }
+}
+
+// Initialize all performance optimizations
+document.addEventListener('DOMContentLoaded', () => {
+    lazyLoadImages();
+    initScrollAnimations();
+    logPerformanceMetrics();
+});
+
+// Service Worker Registration (for PWA capabilities)
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        // Uncomment when service-worker.js is created
+        // navigator.serviceWorker.register('/service-worker.js')
+        //     .then(reg => console.log('Service Worker registered'))
+        //     .catch(err => console.log('Service Worker registration failed'));
+    });
+}
+
 function animateParticles() {
     if (!isTabActive) return; // Pause when tab is inactive
     
