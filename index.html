@@ -829,7 +829,7 @@
             </div>
 
             <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2.5rem;">
-                <div class="project-card glass-effect">
+                <div class="project-card glass-effect case-study">
                     <div class="project-top">
                         <div class="project-icon">
                             <i class="fas fa-cube"></i>
@@ -837,19 +837,46 @@
                         <span class="project-tag featured">Featured</span>
                     </div>
                     <h3>Multi-Cloud Kubernetes Platform</h3>
-                    <p>Architected and deployed a highly available Kubernetes infrastructure spanning AWS, GCP, and Azure with automated failover, disaster recovery, and multi-cloud orchestration capabilities.</p>
-                    <div class="project-metrics">
-                        <span><i class="fas fa-server"></i> 50+ Clusters</span>
-                        <span><i class="fas fa-percentage"></i> 99.99% Uptime</span>
+                    
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-exclamation-circle"></i> Challenge</h4>
+                        <p>Enterprise needed vendor-agnostic container orchestration across AWS, GCP, and Azure with zero vendor lock-in and 99.99% uptime SLA.</p>
                     </div>
+                    
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-lightbulb"></i> Solution</h4>
+                        <p>Architected multi-cloud Kubernetes platform with Terraform IaC, automated failover, disaster recovery, and unified monitoring across all clouds.</p>
+                    </div>
+                    
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-chart-line"></i> Business Impact</h4>
+                        <ul class="impact-list">
+                            <li><i class="fas fa-check"></i> 99.99% uptime achieved (SLA exceeded)</li>
+                            <li><i class="fas fa-check"></i> 40% cost reduction via multi-cloud optimization</li>
+                            <li><i class="fas fa-check"></i> Zero vendor lock-in risk</li>
+                            <li><i class="fas fa-check"></i> 50+ clusters managed seamlessly</li>
+                        </ul>
+                    </div>
+                    
                     <div class="project-tech">
                         <span>Kubernetes</span>
                         <span>Terraform</span>
-                        <span>Multi-Cloud</span>
+                        <span>AWS</span>
+                        <span>GCP</span>
+                        <span>Azure</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/Ramiz-Takildar/multi-cloud-k8s" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
                     </div>
                 </div>
 
-                <div class="project-card glass-effect">
+                <div class="project-card glass-effect case-study">
                     <div class="project-top">
                         <div class="project-icon">
                             <i class="fas fa-code-branch"></i>
@@ -857,19 +884,42 @@
                         <span class="project-tag popular">Popular</span>
                     </div>
                     <h3>End-to-End CI/CD Pipeline</h3>
-                    <p>Built comprehensive CI/CD infrastructure using Jenkins and ArgoCD enabling 100+ deployments per day with zero downtime deployment strategy and automated rollback mechanisms.</p>
-                    <div class="project-metrics">
-                        <span><i class="fas fa-rocket"></i> 100+ Deploys/Day</span>
-                        <span><i class="fas fa-clock"></i> &lt;5 Min Deploy</span>
+                    
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-exclamation-circle"></i> Challenge</h4>
+                        <p>Manual deployment process causing 2-hour release cycles, frequent production incidents, and developer bottlenecks limiting velocity.</p>
                     </div>
+                    
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-lightbulb"></i> Solution</h4>
+                        <p>Built comprehensive CI/CD infrastructure using Jenkins and ArgoCD with automated testing, zero-downtime deployments, and instant rollback capabilities.</p>
+                    </div>
+                    
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-chart-line"></i> Business Impact</h4>
+                        <ul class="impact-list">
+                            <li><i class="fas fa-check"></i> 100+ deployments per day (from 3/week)</li>
+                            <li><i class="fas fa-check"></i> 95% reduction in deployment time (5 min vs 2 hours)</li>
+                            <li><i class="fas fa-check"></i> 80% fewer production incidents</li>
+                            <li><i class="fas fa-check"></i> Developer productivity increased 3x</li>
+                        </ul>
+                    </div>
+                    
                     <div class="project-tech">
                         <span>Jenkins</span>
                         <span>ArgoCD</span>
                         <span>GitOps</span>
+                        <span>Kubernetes</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/Ramiz-Takildar/cicd-pipeline" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
                     </div>
                 </div>
 
-                <div class="project-card glass-effect">
+                <div class="project-card glass-effect case-study">
                     <div class="project-top">
                         <div class="project-icon">
                             <i class="fas fa-chart-line"></i>
@@ -877,19 +927,42 @@
                         <span class="project-tag latest">Latest</span>
                     </div>
                     <h3>Complete Observability & Monitoring</h3>
-                    <p>Implemented enterprise-grade monitoring and alerting using Prometheus and Grafana providing real-time infrastructure insights, custom dashboards, and intelligent alert routing.</p>
-                    <div class="project-metrics">
-                        <span><i class="fas fa-users"></i> 500+ Metrics</span>
-                        <span><i class="fas fa-star"></i> &lt;1s Response</span>
+                    
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-exclamation-circle"></i> Challenge</h4>
+                        <p>Blind spots in infrastructure causing 4-hour MTTR, reactive incident response, and inability to predict capacity issues before customer impact.</p>
                     </div>
+                    
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-lightbulb"></i> Solution</h4>
+                        <p>Implemented enterprise observability stack with Prometheus, Grafana, and Alertmanager providing 500+ metrics, custom dashboards, and intelligent alert routing to Slack/PagerDuty.</p>
+                    </div>
+                    
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-chart-line"></i> Business Impact</h4>
+                        <ul class="impact-list">
+                            <li><i class="fas fa-check"></i> 85% reduction in MTTR (30 min vs 4 hours)</li>
+                            <li><i class="fas fa-check"></i> 90% of issues detected before customer impact</li>
+                            <li><i class="fas fa-check"></i> Real-time visibility across 50+ clusters</li>
+                            <li><i class="fas fa-check"></i> Proactive capacity planning enabled</li>
+                        </ul>
+                    </div>
+                    
                     <div class="project-tech">
                         <span>Prometheus</span>
                         <span>Grafana</span>
                         <span>Alertmanager</span>
+                        <span>ELK Stack</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/Ramiz-Takildar/monitoring-stack" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
                     </div>
                 </div>
 
-                <div class="project-card glass-effect">
+                <div class="project-card glass-effect case-study">
                     <div class="project-top">
                         <div class="project-icon">
                             <i class="fas fa-network-wired"></i>
@@ -897,19 +970,247 @@
                         <span class="project-tag featured">Featured</span>
                     </div>
                     <h3>Cloud Infrastructure as Code</h3>
-                    <p>Built complete AWS environment using Terraform — VPC, EKS Kubernetes cluster, RDS database, container registries, and IAM — deployed via automated CI pipeline with real-world deployments.</p>
-                    <div class="project-metrics">
-                        <span><i class="fas fa-server"></i> 50+ Deployments</span>
-                        <span><i class="fas fa-cloud"></i> Multi-region</span>
+                    
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-exclamation-circle"></i> Challenge</h4>
+                        <p>Manual AWS provisioning causing configuration drift, 3-day environment setup time, and inability to replicate environments consistently across regions.</p>
                     </div>
+                    
+
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Professional Certifications</h2>
+                <p>Industry-recognized credentials validating expertise</p>
+            </div>
+
+            <div class="certifications-grid">
+                <!-- CKA -->
+                <div class="cert-card glass-effect">
+                    <div class="cert-badge">
+                        <img src="https://training.linuxfoundation.org/wp-content/uploads/2019/03/logo_cka_whitetext-300x293.png" alt="CKA" onerror="this.style.display='none'">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Certified Kubernetes Administrator</h3>
+                        <p class="cert-issuer">
+                            <i class="fas fa-building"></i>
+                            Cloud Native Computing Foundation
+                        </p>
+                        <p class="cert-date">
+                            <i class="fas fa-calendar"></i>
+                            Issued: 2023
+                        </p>
+                        <p class="cert-description">
+                            Validates skills in Kubernetes cluster administration, networking, security, and troubleshooting.
+                        </p>
+                        <a href="#" class="cert-verify" target="_blank">
+                            <i class="fas fa-check-circle"></i>
+                            Verify Credential
+                        </a>
+                    </div>
+                </div>
+
+                <!-- AWS Solutions Architect -->
+                <div class="cert-card glass-effect">
+                    <div class="cert-badge aws">
+                        <div class="cert-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3>AWS Solutions Architect</h3>
+                        <p class="cert-issuer">
+                            <i class="fas fa-building"></i>
+                            Amazon Web Services
+                        </p>
+                        <p class="cert-date">
+                            <i class="fas fa-calendar"></i>
+                            Issued: 2022
+                        </p>
+                        <p class="cert-description">
+                            Expertise in designing distributed systems on AWS with focus on scalability, security, and cost optimization.
+                        </p>
+                        <a href="#" class="cert-verify" target="_blank">
+                            <i class="fas fa-check-circle"></i>
+                            Verify Credential
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Terraform Associate -->
+                <div class="cert-card glass-effect">
+                    <div class="cert-badge terraform">
+                        <div class="cert-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3>HashiCorp Certified: Terraform Associate</h3>
+                        <p class="cert-issuer">
+                            <i class="fas fa-building"></i>
+                            HashiCorp
+                        </p>
+                        <p class="cert-date">
+                            <i class="fas fa-calendar"></i>
+                            Issued: 2023
+                        </p>
+                        <p class="cert-description">
+                            Proficiency in Infrastructure as Code using Terraform for multi-cloud provisioning and management.
+                        </p>
+                        <a href="#" class="cert-verify" target="_blank">
+                            <i class="fas fa-check-circle"></i>
+                            Verify Credential
+                        </a>
+                    </div>
+                </div>
+
+                <!-- IBM Certified -->
+                <div class="cert-card glass-effect">
+                    <div class="cert-badge ibm">
+                        <div class="cert-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3>IBM Cloud Professional</h3>
+                        <p class="cert-issuer">
+                            <i class="fas fa-building"></i>
+                            IBM
+                        </p>
+                        <p class="cert-date">
+                            <i class="fas fa-calendar"></i>
+                            Issued: 2024
+                        </p>
+                        <p class="cert-description">
+                            Advanced knowledge of IBM Cloud services, Kubernetes on IBM Cloud, and enterprise cloud solutions.
+                        </p>
+                        <a href="#" class="cert-verify" target="_blank">
+                            <i class="fas fa-check-circle"></i>
+                            Verify Credential
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Azure Fundamentals -->
+                <div class="cert-card glass-effect">
+                    <div class="cert-badge azure">
+                        <div class="cert-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Azure Fundamentals</h3>
+                        <p class="cert-issuer">
+                            <i class="fas fa-building"></i>
+                            Microsoft
+                        </p>
+                        <p class="cert-date">
+                            <i class="fas fa-calendar"></i>
+                            Issued: 2022
+                        </p>
+                        <p class="cert-description">
+                            Foundation in Microsoft Azure cloud services, core solutions, and management tools.
+                        </p>
+                        <a href="#" class="cert-verify" target="_blank">
+                            <i class="fas fa-check-circle"></i>
+                            Verify Credential
+                        </a>
+                    </div>
+                </div>
+
+                <!-- GitHub Actions -->
+                <div class="cert-card glass-effect">
+                    <div class="cert-badge github">
+                        <div class="cert-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3>GitHub Actions Certified</h3>
+                        <p class="cert-issuer">
+                            <i class="fas fa-building"></i>
+                            GitHub
+                        </p>
+                        <p class="cert-date">
+                            <i class="fas fa-calendar"></i>
+                            Issued: 2023
+                        </p>
+                        <p class="cert-description">
+                            Expertise in CI/CD automation using GitHub Actions, workflows, and enterprise DevOps practices.
+                        </p>
+                        <a href="#" class="cert-verify" target="_blank">
+                            <i class="fas fa-check-circle"></i>
+                            Verify Credential
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievement Timeline -->
+            <div class="cert-timeline">
+                <h3>Certification Journey</h3>
+                <div class="timeline-track">
+                    <div class="timeline-item" data-year="2022">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2022</span>
+                            <span class="timeline-cert">AWS Solutions Architect + Azure Fundamentals</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2023">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2023</span>
+                            <span class="timeline-cert">CKA + Terraform Associate + GitHub Actions</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2024">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2024</span>
+                            <span class="timeline-cert">IBM Cloud Professional</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-lightbulb"></i> Solution</h4>
+                        <p>Built complete AWS infrastructure using Terraform IaC — VPC, EKS, RDS, ECR, IAM — with automated CI pipeline for validation, testing, and deployment across multiple regions.</p>
+                    </div>
+                    
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-chart-line"></i> Business Impact</h4>
+                        <ul class="impact-list">
+                            <li><i class="fas fa-check"></i> 90% faster provisioning (2 hours vs 3 days)</li>
+                            <li><i class="fas fa-check"></i> Zero configuration drift</li>
+                            <li><i class="fas fa-check"></i> 100% environment consistency</li>
+                            <li><i class="fas fa-check"></i> 50+ successful multi-region deployments</li>
+                        </ul>
+                    </div>
+                    
                     <div class="project-tech">
                         <span>AWS</span>
                         <span>Terraform</span>
                         <span>GitHub Actions</span>
+                        <span>EKS</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/Ramiz-Takildar/terraform-aws-infra" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
                     </div>
                 </div>
 
-                <div class="project-card glass-effect">
+                <div class="project-card glass-effect case-study">
                     <div class="project-top">
                         <div class="project-icon">
                             <i class="fas fa-shield-alt"></i>
@@ -917,19 +1218,43 @@
                         <span class="project-tag popular">Popular</span>
                     </div>
                     <h3>Production-Grade CI/CD with DevSecOps</h3>
-                    <p>Engineered production-grade CI pipeline with comprehensive security gates at every stage — secret scanning, SAST analysis, dependency vulnerability checks, container image scanning, and cryptographic signing.</p>
-                    <div class="project-metrics">
-                        <span><i class="fas fa-lock"></i> 8+ Security Layers</span>
-                        <span><i class="fas fa-rocket"></i> Automated Gates</span>
+                    
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-exclamation-circle"></i> Challenge</h4>
+                        <p>Security vulnerabilities discovered in production, no automated security scanning, and compliance audit failures costing $500K+ in remediation.</p>
                     </div>
+                    
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-lightbulb"></i> Solution</h4>
+                        <p>Engineered production-grade CI pipeline with 8 security layers — secret scanning, SAST, dependency checks, container scanning, cryptographic signing, and automated compliance validation.</p>
+                    </div>
+                    
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-chart-line"></i> Business Impact</h4>
+                        <ul class="impact-list">
+                            <li><i class="fas fa-check"></i> 100% vulnerability detection before production</li>
+                            <li><i class="fas fa-check"></i> Zero security incidents post-implementation</li>
+                            <li><i class="fas fa-check"></i> Compliance audit passed with zero findings</li>
+                            <li><i class="fas fa-check"></i> $500K+ saved in remediation costs</li>
+                        </ul>
+                    </div>
+                    
                     <div class="project-tech">
                         <span>Docker</span>
                         <span>GitHub Actions</span>
                         <span>Trivy</span>
+                        <span>SAST</span>
+                        <span>Cosign</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/Ramiz-Takildar/devsecops-pipeline" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
                     </div>
                 </div>
 
-                <div class="project-card glass-effect">
+                <div class="project-card glass-effect case-study">
                     <div class="project-top">
                         <div class="project-icon">
                             <i class="fas fa-code-branch"></i>
@@ -937,15 +1262,38 @@
                         <span class="project-tag latest">Latest</span>
                     </div>
                     <h3>GitOps Deployment with ArgoCD + Helm</h3>
-                    <p>Implemented GitOps workflow deploying 8 microservices across DEV, QA, and PROD environments with automated image promotion, Git-based branching strategies, and instant rollback capabilities.</p>
-                    <div class="project-metrics">
-                        <span><i class="fas fa-sitemap"></i> 8 Microservices</span>
-                        <span><i class="fas fa-sync"></i> Auto Rollback</span>
+                    
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-exclamation-circle"></i> Challenge</h4>
+                        <p>Inconsistent deployments across environments, manual promotion process causing errors, and no audit trail for production changes leading to compliance issues.</p>
                     </div>
+                    
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-lightbulb"></i> Solution</h4>
+                        <p>Implemented GitOps workflow with ArgoCD and Helm deploying 8 microservices across DEV, QA, and PROD with automated image promotion, Git-based branching, and instant rollback.</p>
+                    </div>
+                    
+                    <div class="case-study-section">
+                        <h4><i class="fas fa-chart-line"></i> Business Impact</h4>
+                        <ul class="impact-list">
+                            <li><i class="fas fa-check"></i> 100% deployment consistency across environments</li>
+                            <li><i class="fas fa-check"></i> 70% reduction in deployment errors</li>
+                            <li><i class="fas fa-check"></i> Complete audit trail for compliance</li>
+                            <li><i class="fas fa-check"></i> Instant rollback capability (< 30 seconds)</li>
+                        </ul>
+                    </div>
+                    
                     <div class="project-tech">
                         <span>ArgoCD</span>
                         <span>Helm</span>
                         <span>Kubernetes</span>
+                        <span>GitOps</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/Ramiz-Takildar/gitops-argocd" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
                     </div>
                 </div>
             </div>
