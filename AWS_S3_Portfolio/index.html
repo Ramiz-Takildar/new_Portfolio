@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advanced DevOps Portfolio - Kubernetes, Cloud Architecture, Infrastructure Solutions">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><defs><linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%23667eea;stop-opacity:1' /><stop offset='100%' style='stop-color:%23764ba2;stop-opacity:1' /></linearGradient></defs><rect fill='url(%23grad)' width='192' height='192' rx='45'/><text x='96' y='110' font-size='90' font-weight='bold' fill='white' text-anchor='middle' font-family='system-ui'>RT</text></svg>">
+    <title>Ramiz - Lead DevOps Engineer | Cloud Architect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- Background Elements -->
+    <div class="background-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="gradient-orb orb-4"></div>
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="brand-logo">RT</div>
+                <span>RAMIZ TAKILDAR</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#expertise" class="nav-link">Expertise</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">Welcome to my digital space</div>
+                <h1 class="hero-title">
+                    <span class="title-word">Hello, I'm</span>
+                    <span class="title-word highlight">Ramiz Takildar</span>
+                    <span class="title-word">DevOps Architect</span>
+                </h1>
+                <p class="hero-subtitle">Lead DevOps Engineer | Kubernetes Architect | Cloud Innovator. Building resilient, scalable systems that power modern applications.</p>
+                
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Explore Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Let's Connect</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>8+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>K8s Clusters</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Uptime Focus</p>
+                    </div>
+                </div>
+
+                <!-- DevOps Tools Carousel -->
+                <div class="devops-tools-carousel">
+                    <div class="carousel-title">Tech Stack</div>
+                    <div class="tools-slider">
+                        <div class="tool-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>GitOps</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-cube"></i>
+                            <span>Kubernetes</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-tools"></i>
+                            <span>Terraform</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Prometheus</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Grafana</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-arrow-right"></i>
+                            <span>ArgoCD</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-google"></i>
+                            <span>GCP</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Agentic AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="tools-showcase">
+                    <div class="tool-showcase-item" style="--delay: 0s;"><i class="fab fa-docker"></i></div>
+                    <div class="tool-showcase-item" style="--delay: 0.1s;"><i class="fas fa-cube"></i></div>
+                    <div class="tool-showcase-item" style="--delay: 0.2s;"><i class="fab fa-github"></i></div>
+                    <div class="tool-showcase-item" style="--delay: 0.3s;"><i class="fas fa-code-branch"></i></div>
+                    <div class="tool-showcase-item" style="--delay: 0.4s;"><i class="fab fa-aws"></i></div>
+                    <div class="tool-showcase-item" style="--delay: 0.5s;"><i class="fas fa-tools"></i></div>
+                    <div class="tool-showcase-item" style="--delay: 0.6s;"><i class="fas fa-arrow-right"></i></div>
+                    <div class="tool-showcase-item" style="--delay: 0.7s;"><i class="fab fa-google"></i></div>
+                    <div class="tool-showcase-item" style="--delay: 0.8s;"><i class="fas fa-brain"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>DevOps Professional & Cloud Architecture Expert</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="about-card glass-effect">
+                        <h3>Who I Am</h3>
+                        <p>Lead DevOps Engineer at IBM with 8 years of hands-on experience designing, deploying, and maintaining world-class infrastructure solutions. Passionate about Kubernetes, cloud-native technologies, and infrastructure automation.</p>
+                    </div>
+                    <div class="about-card glass-effect">
+                        <h3>What I Do</h3>
+                        <p>I architect and build scalable, secure cloud infrastructure. My expertise spans container orchestration, CI/CD pipeline design, infrastructure as code, and observability solutions that power enterprise applications.</p>
+                    </div>
+                </div>
+
+                <div class="about-right">
+                    <div class="stats-grid">
+                        <div class="stat-box glass-effect">
+                            <i class="fas fa-briefcase"></i>
+                            <h4>8+</h4>
+                            <p>Years in DevOps</p>
+                        </div>
+                        <div class="stat-box glass-effect">
+                            <i class="fas fa-cubes"></i>
+                            <h4>50+</h4>
+                            <p>Kubernetes Clusters</p>
+                        </div>
+                        <div class="stat-box glass-effect">
+                            <i class="fas fa-certificate"></i>
+                            <h4>CKA</h4>
+                            <p>Certified</p>
+                        </div>
+                        <div class="stat-box glass-effect">
+                            <i class="fas fa-rocket"></i>
+                            <h4>100+</h4>
+                            <p>Deployments/Day</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Animation Section -->
+    <section class="tools-section">
+        <div class="section-container">
+            <h2 class="section-title">Mastered Technologies</h2>
+            <div class="tools-grid">
+                <div class="tool-card glass-effect">
+                    <div class="tool-icon-wrapper">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <h3>Docker</h3>
+                    <p>Container platform & runtime</p>
+                </div>
+                <div class="tool-card glass-effect">
+                    <div class="tool-icon-wrapper">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>Kubernetes</h3>
+                    <p>Container orchestration & management</p>
+                </div>
+                <div class="tool-card glass-effect">
+                    <div class="tool-icon-wrapper">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>GitOps</h3>
+                    <p>CI/CD automation & orchestration</p>
+                </div>
+                <div class="tool-card glass-effect">
+                    <div class="tool-icon-wrapper">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Terraform</h3>
+                    <p>Infrastructure as code</p>
+                </div>
+                <div class="tool-card glass-effect">
+                    <div class="tool-icon-wrapper">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Version control & automation</p>
+                </div>
+                <div class="tool-card glass-effect">
+                    <div class="tool-icon-wrapper">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Prometheus</h3>
+                    <p>Monitoring & alerting</p>
+                </div>
+                <div class="tool-card glass-effect">
+                    <div class="tool-icon-wrapper">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Grafana</h3>
+                    <p>Visualization & dashboards</p>
+                </div>
+                <div class="tool-card glass-effect">
+                    <div class="tool-icon-wrapper">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>AWS</h3>
+                    <p>Cloud infrastructure platform</p>
+                </div>
+                <div class="tool-card glass-effect">
+                    <div class="tool-icon-wrapper">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <h3>ArgoCD</h3>
+                    <p>GitOps continuous deployment</p>
+                </div>
+                <div class="tool-card glass-effect">
+                    <div class="tool-icon-wrapper">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <h3>GCP</h3>
+                    <p>Google Cloud Platform</p>
+                </div>
+                <div class="tool-card glass-effect">
+                    <div class="tool-icon-wrapper">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Agentic AI</h3>
+                    <p>Autonomous AI systems & agents</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Core Expertise</h2>
+                <p>Specialized Skills & Technologies</p>
+            </div>
+
+            <div class="expertise-grid">
+                <div class="expertise-card glass-effect">
+                    <div class="expertise-icon">
+                        <i class="fas fa-cubes"></i>
+                    </div>
+                    <h3>Kubernetes & Orchestration</h3>
+                    <p>Design, deploy, and manage production-grade Kubernetes clusters with HA, disaster recovery, and multi-cloud capabilities.</p>
+                    <ul class="tech-list">
+                        <li>Kubernetes</li>
+                        <li>OpenShift</li>
+                        <li>Docker</li>
+                        <li>Helm</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card glass-effect">
+                    <div class="expertise-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Platforms</h3>
+                    <p>Expert in AWS, GCP, and Azure. Design cloud-native architectures with focus on cost optimization and security.</p>
+                    <ul class="tech-list">
+                        <li>AWS</li>
+                        <li>GCP</li>
+                        <li>Azure</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card glass-effect">
+                    <div class="expertise-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>CI/CD & GitOps</h3>
+                    <p>Build robust CI/CD pipelines enabling 100+ deployments daily. Expert in Jenkins, GitLab CI, ArgoCD and GitOps workflows.</p>
+                    <ul class="tech-list">
+                        <li>Jenkins</li>
+                        <li>ArgoCD</li>
+                        <li>GitOps</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card glass-effect">
+                    <div class="expertise-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Infrastructure as Code</h3>
+                    <p>Automate infrastructure provisioning using Terraform, Ansible, and Helm. Version-controlled, reproducible deployments.</p>
+                    <ul class="tech-list">
+                        <li>Terraform</li>
+                        <li>Ansible</li>
+                        <li>Helm Charts</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card glass-effect">
+                    <div class="expertise-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Monitoring & Observability</h3>
+                    <p>Implement comprehensive observability using Prometheus, Grafana, ELK stack, and centralized logging solutions.</p>
+                    <ul class="tech-list">
+                        <li>Prometheus</li>
+                        <li>Grafana</li>
+                        <li>ELK Stack</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card glass-effect">
+                    <div class="expertise-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Security & Compliance</h3>
+                    <p>Implement security best practices, hardening, SSL/TLS, secrets management, and compliance automation.</p>
+                    <ul class="tech-list">
+                        <li>Security</li>
+                        <li>Compliance</li>
+                        <li>PKI</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Infrastructure Solutions & Achievements</p>
+            </div>
+
+            <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2.5rem;">
+                <div class="project-card glass-effect">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <span class="project-tag featured">Featured</span>
+                    </div>
+                    <h3>Multi-Cloud Kubernetes Platform</h3>
+                    <p>Architected and deployed a highly available Kubernetes infrastructure spanning AWS, GCP, and Azure with automated failover, disaster recovery, and multi-cloud orchestration capabilities.</p>
+                    <div class="project-metrics">
+                        <span><i class="fas fa-server"></i> 50+ Clusters</span>
+                        <span><i class="fas fa-percentage"></i> 99.99% Uptime</span>
+                    </div>
+                    <div class="project-tech">
+                        <span>Kubernetes</span>
+                        <span>Terraform</span>
+                        <span>Multi-Cloud</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-effect">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <span class="project-tag popular">Popular</span>
+                    </div>
+                    <h3>End-to-End CI/CD Pipeline</h3>
+                    <p>Built comprehensive CI/CD infrastructure using Jenkins and ArgoCD enabling 100+ deployments per day with zero downtime deployment strategy and automated rollback mechanisms.</p>
+                    <div class="project-metrics">
+                        <span><i class="fas fa-rocket"></i> 100+ Deploys/Day</span>
+                        <span><i class="fas fa-clock"></i> &lt;5 Min Deploy</span>
+                    </div>
+                    <div class="project-tech">
+                        <span>Jenkins</span>
+                        <span>ArgoCD</span>
+                        <span>GitOps</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-effect">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <span class="project-tag latest">Latest</span>
+                    </div>
+                    <h3>Complete Observability & Monitoring</h3>
+                    <p>Implemented enterprise-grade monitoring and alerting using Prometheus and Grafana providing real-time infrastructure insights, custom dashboards, and intelligent alert routing.</p>
+                    <div class="project-metrics">
+                        <span><i class="fas fa-users"></i> 500+ Metrics</span>
+                        <span><i class="fas fa-star"></i> &lt;1s Response</span>
+                    </div>
+                    <div class="project-tech">
+                        <span>Prometheus</span>
+                        <span>Grafana</span>
+                        <span>Alertmanager</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-effect">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <span class="project-tag featured">Featured</span>
+                    </div>
+                    <h3>Cloud Infrastructure as Code</h3>
+                    <p>Built complete AWS environment using Terraform — VPC, EKS Kubernetes cluster, RDS database, container registries, and IAM — deployed via automated CI pipeline with real-world deployments.</p>
+                    <div class="project-metrics">
+                        <span><i class="fas fa-server"></i> 50+ Deployments</span>
+                        <span><i class="fas fa-cloud"></i> Multi-region</span>
+                    </div>
+                    <div class="project-tech">
+                        <span>AWS</span>
+                        <span>Terraform</span>
+                        <span>GitHub Actions</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-effect">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <span class="project-tag popular">Popular</span>
+                    </div>
+                    <h3>Production-Grade CI/CD with DevSecOps</h3>
+                    <p>Engineered production-grade CI pipeline with comprehensive security gates at every stage — secret scanning, SAST analysis, dependency vulnerability checks, container image scanning, and cryptographic signing.</p>
+                    <div class="project-metrics">
+                        <span><i class="fas fa-lock"></i> 8+ Security Layers</span>
+                        <span><i class="fas fa-rocket"></i> Automated Gates</span>
+                    </div>
+                    <div class="project-tech">
+                        <span>Docker</span>
+                        <span>GitHub Actions</span>
+                        <span>Trivy</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-effect">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <span class="project-tag latest">Latest</span>
+                    </div>
+                    <h3>GitOps Deployment with ArgoCD + Helm</h3>
+                    <p>Implemented GitOps workflow deploying 8 microservices across DEV, QA, and PROD environments with automated image promotion, Git-based branching strategies, and instant rollback capabilities.</p>
+                    <div class="project-metrics">
+                        <span><i class="fas fa-sitemap"></i> 8 Microservices</span>
+                        <span><i class="fas fa-sync"></i> Auto Rollback</span>
+                    </div>
+                    <div class="project-tech">
+                        <span>ArgoCD</span>
+                        <span>Helm</span>
+                        <span>Kubernetes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <p>Technologies & Tools Mastery</p>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Container & Orchestration</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">OpenShift</span>
+                        <span class="skill-tag">Helm</span>
+                        <span class="skill-tag">Container Security</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Cloud Architecture</span>
+                        <span class="skill-tag">Cost Optimization</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>CI/CD & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">GitLab CI</span>
+                        <span class="skill-tag">ArgoCD</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag">GitOps</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Infrastructure & Linux</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">Ansible</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Networking</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Monitoring & Logging</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Prometheus</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">ELK Stack</span>
+                        <span class="skill-tag">New Relic</span>
+                        <span class="skill-tag">Datadog</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>AI & Emerging Tech</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Agentic AI</span>
+                        <span class="skill-tag">LLM Integration</span>
+                        <span class="skill-tag">AI Automation</span>
+                        <span class="skill-tag">Machine Learning Ops</span>
+                        <span class="skill-tag">AI Agents</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <div class="section-header light">
+                <h2>Let's Build Something Extraordinary</h2>
+                <p>Have an infrastructure challenge? Let's solve it together</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card glass-effect">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>ramiz.takidar@gmail.com</p>
+                    <a href="mailto:ramiz.takidar@gmail.com" class="contact-link">Send Email</a>
+                </div>
+                <div class="contact-card glass-effect">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+91 8862007313</p>
+                    <a href="tel:+918862007313" class="contact-link">Call Now</a>
+                </div>
+                <div class="contact-card glass-effect">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Pune, India</p>
+                    <a href="#" class="contact-link">View Map</a>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form class="contact-form glass-effect">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links -->
+    <div class="social-sidebar">
+        <a href="https://github.com/Ramiz-Takildar" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ramiz-devops/" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:ramiz.takidar@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Ramiz Takildar</h4>
+                    <p>Lead DevOps Engineer | Cloud Architect | Infrastructure Innovator</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#expertise">Expertise</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-socials">
+                        <a href="https://github.com/Ramiz-Takildar" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ramiz-devops/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:ramiz.takidar@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ramiz Takildar. Crafted with <i class="fas fa-heart"></i> and advanced DevOps expertise.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
