@@ -224,6 +224,426 @@
     </section>
 
     <!-- Tools Animation Section -->
+
+
+    <!-- Production Infrastructure Showcase -->
+    <section id="infrastructure" class="infrastructure-showcase">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Production Infrastructure Showcase</h2>
+                <p>Real-world architecture diagrams demonstrating enterprise-grade DevOps solutions</p>
+            </div>
+
+            <div class="infrastructure-grid">
+                <!-- AWS EKS Platform -->
+                <div class="infrastructure-card glass-effect">
+                    <div class="infra-header">
+                        <div class="infra-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <h3>AWS EKS Platform</h3>
+                        <span class="infra-tag">Production</span>
+                    </div>
+                    <div class="architecture-diagram">
+                        <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background -->
+                            <rect width="800" height="400" fill="url(#grad1)" opacity="0.1"/>
+                            
+                            <!-- Gradient Definitions -->
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                </linearGradient>
+                                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            
+                            <!-- Developer -->
+                            <rect x="50" y="170" width="100" height="60" rx="10" fill="#667eea" opacity="0.8"/>
+                            <text x="100" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">Developer</text>
+                            
+                            <!-- Arrow 1 -->
+                            <path d="M 150 200 L 190 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            <defs>
+                                <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                    <polygon points="0 0, 10 3, 0 6" fill="#f093fb" />
+                                </marker>
+                            </defs>
+                            
+                            <!-- GitHub -->
+                            <rect x="190" y="170" width="100" height="60" rx="10" fill="#764ba2" opacity="0.8"/>
+                            <text x="240" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">GitHub</text>
+                            
+                            <!-- Arrow 2 -->
+                            <path d="M 290 200 L 330 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- Terraform -->
+                            <rect x="330" y="170" width="100" height="60" rx="10" fill="#667eea" opacity="0.8"/>
+                            <text x="380" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">Terraform</text>
+                            
+                            <!-- Arrow 3 -->
+                            <path d="M 430 200 L 470 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- AWS VPC -->
+                            <rect x="470" y="120" width="280" height="160" rx="15" fill="none" stroke="#43e97b" stroke-width="2" stroke-dasharray="5,5"/>
+                            <text x="610" y="145" text-anchor="middle" fill="#43e97b" font-size="12" font-weight="600">AWS VPC</text>
+                            
+                            <!-- EKS Cluster -->
+                            <rect x="490" y="170" width="100" height="60" rx="10" fill="#43e97b" opacity="0.8"/>
+                            <text x="540" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">EKS</text>
+                            
+                            <!-- Arrow 4 -->
+                            <path d="M 590 200 L 630 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- Pods -->
+                            <rect x="630" y="170" width="100" height="60" rx="10" fill="#38f9d7" opacity="0.8"/>
+                            <text x="680" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">Pods</text>
+                            
+                            <!-- Labels -->
+                            <text x="100" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">Code Push</text>
+                            <text x="240" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">CI/CD</text>
+                            <text x="380" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">Provision</text>
+                            <text x="540" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">Orchestrate</text>
+                            <text x="680" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">Deploy</text>
+                        </svg>
+                    </div>
+                    <div class="infra-description">
+                        <p><strong>Automated Infrastructure:</strong> Terraform provisions AWS VPC, EKS clusters, and networking. GitHub Actions triggers deployments. Kubernetes orchestrates containerized workloads across multiple availability zones.</p>
+                        <div class="infra-metrics">
+                            <span><i class="fas fa-check-circle"></i> 99.99% Uptime</span>
+                            <span><i class="fas fa-bolt"></i> Auto-scaling</span>
+                            <span><i class="fas fa-shield-alt"></i> Multi-AZ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GitOps Platform -->
+                <div class="infrastructure-card glass-effect">
+                    <div class="infra-header">
+                        <div class="infra-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3>GitOps Platform</h3>
+                        <span class="infra-tag featured">Featured</span>
+                    </div>
+                    <div class="architecture-diagram">
+                        <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background -->
+                            <rect width="800" height="400" fill="url(#grad1)" opacity="0.1"/>
+                            
+                            <!-- Git Commit -->
+                            <rect x="50" y="170" width="110" height="60" rx="10" fill="#667eea" opacity="0.8"/>
+                            <text x="105" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">Git Commit</text>
+                            
+                            <!-- Arrow -->
+                            <path d="M 160 200 L 200 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- GitHub -->
+                            <rect x="200" y="170" width="100" height="60" rx="10" fill="#764ba2" opacity="0.8"/>
+                            <text x="250" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">GitHub</text>
+                            
+                            <!-- Arrow -->
+                            <path d="M 300 200 L 340 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- ArgoCD -->
+                            <rect x="340" y="170" width="100" height="60" rx="10" fill="#f093fb" opacity="0.8"/>
+                            <text x="390" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">ArgoCD</text>
+                            
+                            <!-- Arrow -->
+                            <path d="M 440 200 L 480 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- Kubernetes -->
+                            <rect x="480" y="170" width="110" height="60" rx="10" fill="#43e97b" opacity="0.8"/>
+                            <text x="535" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">Kubernetes</text>
+                            
+                            <!-- Arrow -->
+                            <path d="M 590 200 L 630 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- Services -->
+                            <rect x="630" y="120" width="120" height="160" rx="10" fill="none" stroke="#38f9d7" stroke-width="2"/>
+                            <text x="690" y="145" text-anchor="middle" fill="#38f9d7" font-size="12" font-weight="600">Services</text>
+                            
+                            <rect x="650" y="160" width="80" height="35" rx="5" fill="#38f9d7" opacity="0.6"/>
+                            <text x="690" y="182" text-anchor="middle" fill="white" font-size="11">Deploy</text>
+                            
+                            <rect x="650" y="205" width="80" height="35" rx="5" fill="#38f9d7" opacity="0.6"/>
+                            <text x="690" y="227" text-anchor="middle" fill="white" font-size="11">Service</text>
+                            
+                            <rect x="650" y="250" width="80" height="35" rx="5" fill="#38f9d7" opacity="0.6"/>
+                            <text x="690" y="272" text-anchor="middle" fill="white" font-size="11">Ingress</text>
+                            
+                            <!-- Labels -->
+                            <text x="105" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">Push</text>
+                            <text x="250" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">Store</text>
+                            <text x="390" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">Sync</text>
+                            <text x="535" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">Apply</text>
+                            <text x="690" y="310" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">Live</text>
+                        </svg>
+                    </div>
+                    <div class="infra-description">
+                        <p><strong>Declarative Deployments:</strong> Git as single source of truth. ArgoCD continuously monitors repositories and automatically syncs changes to Kubernetes clusters. Zero-downtime deployments with automated rollbacks.</p>
+                        <div class="infra-metrics">
+                            <span><i class="fas fa-sync"></i> Auto-sync</span>
+                            <span><i class="fas fa-history"></i> Rollback</span>
+                            <span><i class="fas fa-rocket"></i> Zero-downtime</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monitoring Stack -->
+                <div class="infrastructure-card glass-effect">
+                    <div class="infra-header">
+                        <div class="infra-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Monitoring Stack</h3>
+                        <span class="infra-tag">Observability</span>
+                    </div>
+                    <div class="architecture-diagram">
+                        <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background -->
+                            <rect width="800" height="400" fill="url(#grad1)" opacity="0.1"/>
+                            
+                            <!-- Application -->
+                            <rect x="50" y="170" width="110" height="60" rx="10" fill="#667eea" opacity="0.8"/>
+                            <text x="105" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">Application</text>
+                            
+                            <!-- Arrow -->
+                            <path d="M 160 200 L 210 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- Prometheus -->
+                            <rect x="210" y="170" width="120" height="60" rx="10" fill="#764ba2" opacity="0.8"/>
+                            <text x="270" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">Prometheus</text>
+                            
+                            <!-- Arrow -->
+                            <path d="M 330 200 L 380 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- Grafana -->
+                            <rect x="380" y="170" width="100" height="60" rx="10" fill="#f093fb" opacity="0.8"/>
+                            <text x="430" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">Grafana</text>
+                            
+                            <!-- Arrow -->
+                            <path d="M 480 200 L 530 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- Alertmanager -->
+                            <rect x="530" y="170" width="120" height="60" rx="10" fill="#43e97b" opacity="0.8"/>
+                            <text x="590" y="200" text-anchor="middle" fill="white" font-size="13" font-weight="600">Alert</text>
+                            <text x="590" y="215" text-anchor="middle" fill="white" font-size="13" font-weight="600">Manager</text>
+                            
+                            <!-- Arrow -->
+                            <path d="M 650 200 L 690 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- Notifications -->
+                            <rect x="690" y="120" width="80" height="160" rx="10" fill="none" stroke="#38f9d7" stroke-width="2"/>
+                            <text x="730" y="145" text-anchor="middle" fill="#38f9d7" font-size="11" font-weight="600">Notify</text>
+                            
+                            <circle cx="730" cy="175" r="15" fill="#38f9d7" opacity="0.6"/>
+                            <text x="730" y="180" text-anchor="middle" fill="white" font-size="16">📧</text>
+                            
+                            <circle cx="730" cy="215" r="15" fill="#38f9d7" opacity="0.6"/>
+                            <text x="730" y="220" text-anchor="middle" fill="white" font-size="16">💬</text>
+                            
+                            <circle cx="730" cy="255" r="15" fill="#38f9d7" opacity="0.6"/>
+                            <text x="730" y="260" text-anchor="middle" fill="white" font-size="16">📱</text>
+                            
+                            <!-- Labels -->
+                            <text x="105" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">Metrics</text>
+                            <text x="270" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">Collect</text>
+                            <text x="430" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">Visualize</text>
+                            <text x="590" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">Alert</text>
+                            <text x="730" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">Notify</text>
+                        </svg>
+                    </div>
+                    <div class="infra-description">
+                        <p><strong>Complete Observability:</strong> Prometheus scrapes metrics from applications and infrastructure. Grafana provides real-time dashboards. Alertmanager routes critical alerts to Slack, PagerDuty, and email.</p>
+                        <div class="infra-metrics">
+                            <span><i class="fas fa-eye"></i> Real-time</span>
+                            <span><i class="fas fa-bell"></i> Smart alerts</span>
+                            <span><i class="fas fa-chart-bar"></i> Dashboards</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevSecOps Pipeline -->
+                <div class="infrastructure-card glass-effect">
+                    <div class="infra-header">
+                        <div class="infra-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>DevSecOps Pipeline</h3>
+                        <span class="infra-tag security">Security</span>
+                    </div>
+                    <div class="architecture-diagram">
+                        <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background -->
+                            <rect width="800" height="400" fill="url(#grad1)" opacity="0.1"/>
+                            
+                            <!-- Code -->
+                            <rect x="30" y="170" width="80" height="60" rx="10" fill="#667eea" opacity="0.8"/>
+                            <text x="70" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">Code</text>
+                            
+                            <!-- Arrow -->
+                            <path d="M 110 200 L 140 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- SAST -->
+                            <rect x="140" y="170" width="80" height="60" rx="10" fill="#764ba2" opacity="0.8"/>
+                            <text x="180" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">SAST</text>
+                            
+                            <!-- Arrow -->
+                            <path d="M 220 200 L 250 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- Build -->
+                            <rect x="250" y="170" width="80" height="60" rx="10" fill="#667eea" opacity="0.8"/>
+                            <text x="290" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">Build</text>
+                            
+                            <!-- Arrow -->
+                            <path d="M 330 200 L 360 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- Container Scan -->
+                            <rect x="360" y="170" width="90" height="60" rx="10" fill="#f093fb" opacity="0.8"/>
+                            <text x="405" y="200" text-anchor="middle" fill="white" font-size="12" font-weight="600">Container</text>
+                            <text x="405" y="215" text-anchor="middle" fill="white" font-size="12" font-weight="600">Scan</text>
+                            
+                            <!-- Arrow -->
+                            <path d="M 450 200 L 480 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- Deploy -->
+                            <rect x="480" y="170" width="80" height="60" rx="10" fill="#43e97b" opacity="0.8"/>
+                            <text x="520" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">Deploy</text>
+                            
+                            <!-- Arrow -->
+                            <path d="M 560 200 L 590 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- DAST -->
+                            <rect x="590" y="170" width="80" height="60" rx="10" fill="#764ba2" opacity="0.8"/>
+                            <text x="630" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">DAST</text>
+                            
+                            <!-- Arrow -->
+                            <path d="M 670 200 L 700 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- Monitor -->
+                            <rect x="700" y="170" width="80" height="60" rx="10" fill="#38f9d7" opacity="0.8"/>
+                            <text x="740" y="205" text-anchor="middle" fill="white" font-size="13" font-weight="600">Monitor</text>
+                            
+                            <!-- Security Icons -->
+                            <circle cx="180" cy="140" r="12" fill="#f5576c" opacity="0.8"/>
+                            <text x="180" y="145" text-anchor="middle" fill="white" font-size="14">🔒</text>
+                            
+                            <circle cx="405" cy="140" r="12" fill="#f5576c" opacity="0.8"/>
+                            <text x="405" y="145" text-anchor="middle" fill="white" font-size="14">🔍</text>
+                            
+                            <circle cx="630" cy="140" r="12" fill="#f5576c" opacity="0.8"/>
+                            <text x="630" y="145" text-anchor="middle" fill="white" font-size="14">🛡️</text>
+                            
+                            <!-- Labels -->
+                            <text x="70" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="10">Source</text>
+                            <text x="180" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="10">Static</text>
+                            <text x="290" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="10">Compile</text>
+                            <text x="405" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="10">Image</text>
+                            <text x="520" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="10">Release</text>
+                            <text x="630" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="10">Dynamic</text>
+                            <text x="740" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="10">Runtime</text>
+                        </svg>
+                    </div>
+                    <div class="infra-description">
+                        <p><strong>Security-First Pipeline:</strong> SAST scans code for vulnerabilities. Container images scanned before deployment. DAST tests running applications. Continuous monitoring detects runtime threats.</p>
+                        <div class="infra-metrics">
+                            <span><i class="fas fa-lock"></i> Secure</span>
+                            <span><i class="fas fa-bug"></i> Vuln scan</span>
+                            <span><i class="fas fa-shield-alt"></i> Compliant</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terraform Workflow -->
+                <div class="infrastructure-card glass-effect">
+                    <div class="infra-header">
+                        <div class="infra-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Terraform Provisioning</h3>
+                        <span class="infra-tag">IaC</span>
+                    </div>
+                    <div class="architecture-diagram">
+                        <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background -->
+                            <rect width="800" height="400" fill="url(#grad1)" opacity="0.1"/>
+                            
+                            <!-- Code -->
+                            <rect x="50" y="170" width="90" height="60" rx="10" fill="#667eea" opacity="0.8"/>
+                            <text x="95" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">TF Code</text>
+                            
+                            <!-- Arrow -->
+                            <path d="M 140 200 L 180 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- Plan -->
+                            <rect x="180" y="170" width="90" height="60" rx="10" fill="#764ba2" opacity="0.8"/>
+                            <text x="225" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">Plan</text>
+                            
+                            <!-- Arrow -->
+                            <path d="M 270 200 L 310 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- Apply -->
+                            <rect x="310" y="170" width="90" height="60" rx="10" fill="#f093fb" opacity="0.8"/>
+                            <text x="355" y="205" text-anchor="middle" fill="white" font-size="14" font-weight="600">Apply</text>
+                            
+                            <!-- Arrow -->
+                            <path d="M 400 200 L 440 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- AWS Resources -->
+                            <rect x="440" y="120" width="140" height="160" rx="10" fill="none" stroke="#43e97b" stroke-width="2"/>
+                            <text x="510" y="145" text-anchor="middle" fill="#43e97b" font-size="12" font-weight="600">AWS Resources</text>
+                            
+                            <rect x="460" y="160" width="100" height="30" rx="5" fill="#43e97b" opacity="0.6"/>
+                            <text x="510" y="180" text-anchor="middle" fill="white" font-size="11">VPC</text>
+                            
+                            <rect x="460" y="200" width="100" height="30" rx="5" fill="#43e97b" opacity="0.6"/>
+                            <text x="510" y="220" text-anchor="middle" fill="white" font-size="11">EKS</text>
+                            
+                            <rect x="460" y="240" width="100" height="30" rx="5" fill="#43e97b" opacity="0.6"/>
+                            <text x="510" y="260" text-anchor="middle" fill="white" font-size="11">RDS</text>
+                            
+                            <!-- Arrow -->
+                            <path d="M 580 200 L 620 200" stroke="#f093fb" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+                            
+                            <!-- State -->
+                            <rect x="620" y="170" width="90" height="60" rx="10" fill="#38f9d7" opacity="0.8"/>
+                            <text x="665" y="200" text-anchor="middle" fill="white" font-size="13" font-weight="600">State</text>
+                            <text x="665" y="215" text-anchor="middle" fill="white" font-size="13" font-weight="600">Mgmt</text>
+                            
+                            <!-- Drift Detection Arrow (back) -->
+                            <path d="M 665 230 Q 665 320, 355 320 Q 355 260, 355 230" stroke="#f5576c" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead2)"/>
+                            <defs>
+                                <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                    <polygon points="0 0, 10 3, 0 6" fill="#f5576c" />
+                                </marker>
+                            </defs>
+                            
+                            <!-- Labels -->
+                            <text x="95" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">Write</text>
+                            <text x="225" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">Preview</text>
+                            <text x="355" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">Execute</text>
+                            <text x="510" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">Provision</text>
+                            <text x="665" y="290" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11">Track</text>
+                            <text x="510" y="340" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10">Drift Detection</text>
+                        </svg>
+                    </div>
+                    <div class="infra-description">
+                        <p><strong>Infrastructure as Code:</strong> Terraform defines infrastructure declaratively. Plan shows changes before applying. State management tracks resources. Automated drift detection ensures consistency.</p>
+                        <div class="infra-metrics">
+                            <span><i class="fas fa-code"></i> Declarative</span>
+                            <span><i class="fas fa-sync-alt"></i> Idempotent</span>
+                            <span><i class="fas fa-history"></i> Versioned</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="tools-section">
         <div class="section-container">
             <h2 class="section-title">Mastered Technologies</h2>

@@ -1098,6 +1098,212 @@ html.light-mode .stat-box:hover {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: var(--primary);
+
+
+/* Infrastructure Showcase Section */
+.infrastructure-showcase {
+    background: linear-gradient(180deg, rgba(102, 126, 234, 0.05) 0%, rgba(240, 147, 251, 0.05) 100%);
+    padding: 120px 0;
+}
+
+html.light-mode .infrastructure-showcase {
+    background: linear-gradient(180deg, rgba(102, 126, 234, 0.02) 0%, rgba(240, 147, 251, 0.02) 100%);
+}
+
+.infrastructure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.infrastructure-card {
+    padding: 2.5rem;
+    border-radius: 20px;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.infrastructure-card:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+    border-color: rgba(102, 126, 234, 0.5);
+    box-shadow: 0 25px 50px rgba(102, 126, 234, 0.2);
+}
+
+html.light-mode .infrastructure-card:hover {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(240, 147, 251, 0.1));
+}
+
+.infra-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.infra-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: white;
+    flex-shrink: 0;
+}
+
+.infra-header h3 {
+    flex: 1;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    margin: 0;
+}
+
+html.light-mode .infra-header h3 {
+    color: var(--text-primary);
+}
+
+.infra-tag {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.3), rgba(240, 147, 251, 0.3));
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.infra-tag.featured {
+    background: linear-gradient(135deg, var(--accent), #f5576c);
+}
+
+.infra-tag.security {
+    background: linear-gradient(135deg, #f5576c, #ff6b6b);
+}
+
+html.light-mode .infra-tag {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(240, 147, 251, 0.15));
+    color: var(--primary);
+    border-color: var(--border-light);
+}
+
+.architecture-diagram {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.5), rgba(26, 31, 58, 0.5));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+html.light-mode .architecture-diagram {
+    background: linear-gradient(135deg, rgba(248, 250, 252, 0.8), rgba(241, 245, 249, 0.8));
+    border-color: var(--border-light);
+}
+
+.architecture-diagram svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.infra-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.infra-description p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+    margin: 0;
+}
+
+html.light-mode .infra-description p {
+    color: var(--text-secondary);
+}
+
+.infra-description strong {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.infra-metrics {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.infra-metrics span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background: rgba(102, 126, 234, 0.2);
+    border: 1px solid rgba(102, 126, 234, 0.3);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+}
+
+html.light-mode .infra-metrics span {
+    background: rgba(102, 126, 234, 0.1);
+    border-color: var(--border-light);
+    color: var(--primary);
+}
+
+.infra-metrics i {
+    color: var(--accent);
+    font-size: 1rem;
+}
+
+/* Responsive Infrastructure */
+@media (max-width: 768px) {
+    .infrastructure-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .infrastructure-card {
+        padding: 1.5rem;
+    }
+    
+    .infra-header {
+        gap: 1rem;
+    }
+    
+    .infra-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+    .infra-header h3 {
+        font-size: 1.2rem;
+    }
+    
+    .architecture-diagram {
+        padding: 1rem;
+    }
+    
+    .infra-metrics {
+        gap: 0.8rem;
+    }
+    
+    .infra-metrics span {
+        font-size: 0.75rem;
+        padding: 0.5rem 0.9rem;
+    }
+}
+
 }
 
 .stat-box h4 {
