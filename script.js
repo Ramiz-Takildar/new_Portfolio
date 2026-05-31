@@ -349,3 +349,36 @@ if ('serviceWorker' in navigator) {
             .catch(err => console.log('SW registration failed:', err));
     });
 }
+
+
+// Sticky CTA Toggle
+const stickyCtaToggle = document.getElementById('stickyCtaToggle');
+const stickyCtaMenu = document.getElementById('stickyCtaMenu');
+
+if (stickyCtaToggle && stickyCtaMenu) {
+    stickyCtaToggle.addEventListener('click', () => {
+        stickyCtaMenu.classList.toggle('active');
+        stickyCtaToggle.style.transform = stickyCtaMenu.classList.contains('active') 
+            ? 'rotate(45deg)' 
+            : 'rotate(0deg)';
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!stickyCtaToggle.contains(e.target) && !stickyCtaMenu.contains(e.target)) {
+            stickyCtaMenu.classList.remove('active');
+            stickyCtaToggle.style.transform = 'rotate(0deg)';
+        }
+    });
+
+    // Close menu when clicking a CTA item
+    const ctaItems = stickyCtaMenu.querySelectorAll('.sticky-cta-item');
+    ctaItems.forEach(item => {
+        item.addEventListener('click', () => {
+            stickyCtaMenu.classList.remove('active');
+            stickyCtaToggle.style.transform = 'rotate(0deg)';
+        });
+    });
+}
+
+console.log('Portfolio loaded successfully with sticky CTAs');

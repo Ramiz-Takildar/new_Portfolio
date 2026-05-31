@@ -1926,6 +1926,156 @@ html.light-mode .footer-bottom {
     transform: scale(0.9);
 }
 
+
+/* Sticky Recruiter CTAs */
+.sticky-cta-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.sticky-cta-toggle {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+}
+
+.sticky-cta-toggle:hover {
+    transform: scale(1.1) rotate(90deg);
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+}
+
+.sticky-cta-toggle:active {
+    transform: scale(0.95);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+    }
+    50% {
+        box-shadow: 0 10px 40px rgba(102, 126, 234, 0.6), 0 0 0 10px rgba(102, 126, 234, 0.1);
+    }
+}
+
+.sticky-cta-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.sticky-cta-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sticky-cta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.9rem 1.5rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    white-space: nowrap;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+}
+
+html.light-mode .sticky-cta-item {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(240, 147, 251, 0.1));
+    border-color: var(--border-light);
+    color: var(--text-primary);
+}
+
+.sticky-cta-item:hover {
+    transform: translateX(-5px) scale(1.05);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+html.light-mode .sticky-cta-item:hover {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(240, 147, 251, 0.2));
+}
+
+.sticky-cta-item i {
+    font-size: 1.2rem;
+    width: 24px;
+    text-align: center;
+}
+
+.sticky-cta-item.whatsapp:hover {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    border-color: #25D366;
+    color: white;
+}
+
+.sticky-cta-item.linkedin:hover {
+    background: linear-gradient(135deg, #0077B5, #00A0DC);
+    border-color: #0077B5;
+    color: white;
+}
+
+.sticky-cta-item.github:hover {
+    background: linear-gradient(135deg, #333, #24292e);
+    border-color: #333;
+    color: white;
+}
+
+.sticky-cta-item.calendly:hover {
+    background: linear-gradient(135deg, #006BFF, #0052CC);
+    border-color: #006BFF;
+    color: white;
+}
+
+.sticky-cta-item.contact:hover {
+    background: linear-gradient(135deg, var(--accent), #f5576c);
+    border-color: var(--accent);
+    color: white;
+}
+
+/* Responsive Sticky CTAs */
+@media (max-width: 768px) {
+    .sticky-cta-container {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-social-fab {
+        display: none !important;
+    }
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
     .mobile-social-fab {
